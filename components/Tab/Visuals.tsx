@@ -6,7 +6,7 @@ const Visuals = async () => {
   const visuals: Visual[] = await response.json();
 
   return (
-    <div className="tab visuals hidden py-2 px-12 flex-col gap-y-12 mb-12">
+    <div className="tab visuals hidden mt-8 py-2 px-12 flex-col gap-y-12 mb-12">
       {visuals.map((visual) => (
         <div
           key={visual.id}
