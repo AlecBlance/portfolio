@@ -97,7 +97,7 @@ const Home = () => {
           </h1>
           <a
             href="mailto:blancealec1@gmail.com"
-            className="bg-portfolio-glass mt-12 bg-opacity-30 border border-portfolio-secondary border-opacity-20 px-12 py-5 text-2xl rounded-lg"
+            className="bg-portfolio-glass/30 mt-12 border border-portfolio-secondary border-opacity-20 px-12 py-5 text-2xl rounded-lg"
           >
             Say Hi
           </a>

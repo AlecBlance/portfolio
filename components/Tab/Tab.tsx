@@ -7,7 +7,7 @@ const Tab = () => {
   const [currentTab, setCurrentTab] = useState<string>("projects");
 
   const selectedStyle =
-    "text-portfolio-secondary bg-portfolio-lightgray fill-portfolio-secondary";
+    "text-portfolio-secondary bg-portfolio-accent fill-portfolio-secondary";
   const unSelectedStyle = "text-portfolio-gray fill-portfolio-gray";
 
   const setTab = (tab: string) => {
