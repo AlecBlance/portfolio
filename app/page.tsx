@@ -106,7 +106,7 @@ const Home = () => {
           <p className="gradient">Alec Blance © 2023</p>
           <Socials />
         </div>
-        <div className="flex absolute w-full h-full z-[-1] items-end bottom-[-15rem]">
+        <div className="flex absolute w-full h-full z-[-1] items-end bottom-[-50vw]">
           <div className="h-[100vw] w-[100vw] rounded-full bg-portfolio-accent light blur-[35vw]"></div>
         </div>
       </div>
