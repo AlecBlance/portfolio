@@ -3,10 +3,6 @@ import Tab from "@/components/Tab/Tab";
 import Projects from "@/components/Tab/Projects";
 import {
   ReactIcon,
-  GithubIcon,
-  GmailIcon,
-  LinkedinIcon,
-  FacebookIcon,
   TypescriptIcon,
   TailwindIcon,
   NodeIcon,
@@ -94,7 +90,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="h-[70vh] flex flex-col relative overflow-hidden">
+      <div className="min-h-[70vh] h-[50vw] flex flex-col relative overflow-hidden">
         <div className="flex-grow mx-12 flex flex-col items-center justify-center">
           <h1 className="gradient text-5xl text-center leading-tight	">
             Let’s build something epic!
