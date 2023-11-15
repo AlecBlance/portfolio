@@ -10,7 +10,7 @@ const Visuals = async () => {
       {visuals.map((visual) => (
         <div
           key={visual.id}
-          className="w-full h-[25vh] bg-cover bg-center rounded-lg"
+          className="w-full h-[54vw] bg-cover bg-center rounded-lg"
           style={{ backgroundImage: `url('${visual.image}')` }}
         ></div>
       ))}
