@@ -17,9 +17,9 @@ import Socials from "@/components/Socials";
 const Home = () => {
   return (
     <>
-      <div className="relative h-[100dvh] flex flex-col">
-        <div className="flex justify-center items-center absolute w-full h-[100dvh] z-[-1]">
-          <div className="h-[100vh] max-h-[100vw] w-[100vh] rounded-full justify-self-center bg-portfolio-accent light blur-[35vw] sm:blur-[25vh]"></div>
+      <div className="relative min-h-[100dvh] flex flex-col">
+        <div className="flex justify-center items-center absolute w-full h-full z-[-1]">
+          <div className="h-[100vh] max-h-[100vw] w-[100vh] rounded-full justify-self-center bg-portfolio-accent light blur-[35vw] md:blur-[25vh]"></div>
         </div>
         <div className="flex justify-between bg-portfolio-glass bg-opacity-10 border-b border-b-portfolio-glass-stroke p-3">
           <div className="flex items-center py-1 px-4 bg-portfolio-accent rounded-md">
@@ -32,10 +32,10 @@ const Home = () => {
           </div>
           <Socials />
         </div>
-        <div className="h-full w-full flex items-center">
+        <div className="h-full w-full flex-grow flex items-center">
           <div className="h-[45%] flex flex-col w-full items-center gap-y-10">
             <Image
-              className="rounded-full"
+              className="rounded-full w-32"
               src="/profile.jpg"
               alt="Alec Blance Profile Image"
               width={150}
@@ -108,8 +108,8 @@ const Home = () => {
           <p className="gradient">Alec Blance © 2023</p>
           <Socials />
         </div>
-        <div className="flex absolute w-full h-full z-[-1] items-end bottom-[-50vw]">
-          <div className="h-[100vw] w-[100vw] rounded-full bg-portfolio-accent light blur-[35vw]"></div>
+        <div className="flex absolute w-full h-full z-[-1] items-end bottom-[-50vw] md:bottom-[-70vh] justify-center ">
+          <div className="h-[100vh] max-h-[100vw] w-[100vh] rounded-full bg-portfolio-accent light blur-[35vw] md:blur-[25vh]"></div>
         </div>
       </div>
     </>

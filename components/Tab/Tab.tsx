@@ -23,7 +23,7 @@ const Tab = () => {
   };
 
   return (
-    <div className="px-12 flex items-center">
+    <div className="px-12 mt-10 flex items-center">
       <div className="flex bg-portfolio-black w-full rounded-lg border border-portfolio-lightgray">
         <button
           className={`w-1/2 flex items-center justify-center m-1 px-2 py-1 rounded-lg ${
