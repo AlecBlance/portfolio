@@ -6,11 +6,11 @@ const Visuals = async () => {
   const visuals: Visual[] = await response.json();
 
   return (
-    <div className="tab visuals hidden mt-8 py-2 px-12 flex-col gap-y-12 mb-12">
+    <div className="tab visuals hidden mt-8 py-2 px-12 flex-col gap-y-12 mb-12 sm:px-[15vw]">
       {visuals.map((visual) => (
         <div
           key={visual.id}
-          className="w-full h-[54vw] bg-cover bg-center rounded-lg"
+          className="w-full h-[45vw] bg-cover bg-center rounded-lg"
           style={{ backgroundImage: `url('${visual.image}')` }}
         ></div>
       ))}

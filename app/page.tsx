@@ -21,7 +21,7 @@ const Home = () => {
         <div className="flex justify-center items-center absolute w-full h-full z-[-1]">
           <div className="h-[100vh] max-h-[100vw] w-[100vh] rounded-full justify-self-center bg-portfolio-accent light blur-[35vw] md:blur-[25vh]"></div>
         </div>
-        <div className="flex justify-between bg-portfolio-glass bg-opacity-10 border-b border-b-portfolio-glass-stroke p-3">
+        <div className="flex justify-between bg-portfolio-glass bg-opacity-10 border-b border-b-portfolio-glass-stroke p-3 sm:px-[15vw] ">
           <div className="flex items-center py-1 px-4 bg-portfolio-accent rounded-md">
             <a
               href="https://drive.google.com/file/d/182cqMIL5egzjUxaYCUp5-RQaMRXGsUjQ/view?usp=sharing"
@@ -54,7 +54,7 @@ const Home = () => {
         <Projects />
         <Visuals />
       </div>
-      <div className="py-6 px-12 bg-portfolio-black bg-opacity-40">
+      <div className="py-6 px-12 bg-portfolio-black bg-opacity-40 sm:px-[15vw] border-y border-portfolio-glass-stroke/40">
         <h1 className="text-xl font-bold gradient mb-3">Skills</h1>
         <p>I am comfortable working with these technologies.</p>
         <div className="mt-6 flex flex-wrap w-full justify-around gap-x-5 gap-y-5">
@@ -104,7 +104,7 @@ const Home = () => {
             Say Hi
           </a>
         </div>
-        <div className="flex justify-between bg-portfolio-glass bg-opacity-10 border-b border-b-portfolio-glass-stroke p-3">
+        <div className="flex justify-between bg-portfolio-glass bg-opacity-10 border-b border-b-portfolio-glass-stroke p-3 sm:px-[15vw]">
           <p className="gradient">Alec Blance © 2023</p>
           <Socials />
         </div>

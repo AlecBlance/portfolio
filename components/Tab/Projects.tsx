@@ -6,7 +6,7 @@ const Projects = async () => {
   const projects: Project[] = await response.json();
 
   return (
-    <div className="tab projects flex py-2 px-12 flex-col">
+    <div className="tab projects flex py-2 px-12 flex-col sm:px-[15vw]">
       {projects.map((project) => (
         <Project key={project.id} project={project} />
       ))}
@@ -17,20 +17,24 @@ const Projects = async () => {
 const Project = ({ project }: { project: Project }) => {
   return (
     <div className="flex flex-col py-12 first:pt-7 border-b border-portfolio-lightgray last:border-b-0">
-      <div className="flex flex-col">
-        <div className="mb-6">
-          <h1 className="text-xl mb-3">
-            {project.emoji}{" "}
-            <span className="font-bold gradient">{project.title}</span>
-          </h1>
-          <p>{project.app}</p>
+      <div className="flex flex-col lg:flex-row lg:mb-8">
+        <div className="flex flex-col lg:pr-8">
+          <div className="mb-6">
+            <h1 className="text-xl mb-3">
+              {project.emoji}{" "}
+              <span className="font-bold gradient">{project.title}</span>
+            </h1>
+            <p>{project.app}</p>
+          </div>
+          <p className="text-portfolio-gray font-light">
+            {project.description}
+          </p>
+          <p className="text-portfolio-gray text-sm mt-4 font-light">
+            <b>Technologies: </b>
+            {project.technologies.join("; ")}
+          </p>
         </div>
-        <p className="text-portfolio-gray font-light">{project.description}</p>
-        <p className="text-portfolio-gray text-sm mt-4 font-light">
-          <b>Technologies: </b>
-          {project.technologies.join("; ")}
-        </p>
-        <div className="my-8">
+        <div className="my-8 flex-shrink-0 lg:my-0">
           {project.liveSite && (
             <a
               href={project.liveSite}
@@ -50,7 +54,7 @@ const Project = ({ project }: { project: Project }) => {
         </div>
       </div>
       <div
-        className="w-full h-[54vw] bg-cover bg-center rounded-lg"
+        className="w-full h-[45vw] bg-cover bg-center rounded-lg "
         style={{
           backgroundImage: `url('/${project.title.replaceAll(" ", "")}.png')`,
         }}
