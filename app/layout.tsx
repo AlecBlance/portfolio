@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-portfolio-primary bg-dots bg-center bg-no-repeat bg-fixed text-portfolio-secondary ${inter.className}`}
+        className={`bg-portfolio-primary bg-dots bg-center bg-no-repeat bg-fixed text-portfolio-secondary xl:bg-cover ${inter.className}`}
       >
         {children}
       </body>

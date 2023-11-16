@@ -18,15 +18,14 @@ const Home = () => {
   return (
     <>
       <div className="relative min-h-[100dvh] flex flex-col">
-        <div className="flex justify-center items-center absolute w-full h-full z-[-1]">
+        <div className="pointer-events-none fixed left-0 top-[-2.5rem] z-[99] h-10 w-10 rounded-full bg-indigo-400 mix-blend-screen duration-75 ease-in-out moving-circle "></div>
+        {/* <div className="flex justify-center items-center absolute w-full h-full z-[-1]">
           <div className="h-[100vh] max-h-[100vw] w-[100vh] rounded-full justify-self-center bg-portfolio-accent light blur-[35vw] md:blur-[25vh]"></div>
-        </div>
-        <div className="flex justify-between bg-portfolio-glass bg-opacity-10 border-b border-b-portfolio-glass-stroke p-3 sm:px-[15vw] ">
-          <div className="flex items-center py-1 px-4 bg-portfolio-accent rounded-md">
-            <a
-              href="https://drive.google.com/file/d/182cqMIL5egzjUxaYCUp5-RQaMRXGsUjQ/view?usp=sharing"
-              className="font-medium"
-            >
+        </div> */}
+
+        <div className="flex justify-between sm:mx-[15vw] mt-6 px-12 sm:px-0">
+          <div className="flex items-center py-1 px-4 rounded-md border border-portfolio-accent hover:bg-portfolio-accent font-light">
+            <a href="https://drive.google.com/file/d/182cqMIL5egzjUxaYCUp5-RQaMRXGsUjQ/view?usp=sharing">
               My Resume
             </a>
           </div>
@@ -35,16 +34,22 @@ const Home = () => {
         <div className="h-full w-full flex-grow flex items-center">
           <div className="h-[45%] flex flex-col w-full items-center gap-y-10">
             <Image
-              className="rounded-full w-32"
+              className="rounded-full w-32 lg:w-36 xl:w-40"
               src="/profile.jpg"
               alt="Alec Blance Profile Image"
               width={150}
               height={150}
             />
-            <div className="flex flex-col gap-y-5 items-center">
-              <p className="font-extralight text-xl">Hi, 👋🏻 I am </p>
-              <h1 className="text-5xl gradient">Alec Blance</h1>
-              <p className="font-extralight text-xl">Front End Developer</p>
+            <div className="flex flex-col gap-y-5 xl:gap-y-8 items-center">
+              <p className="font-extralight text-xl lg:text-2xl xl:text-3xl">
+                Hi, 👋🏻 I am{" "}
+              </p>
+              <h1 className="text-5xl font-semibold gradient lg:text-6xl xl:text-7xl">
+                Alec Blance
+              </h1>
+              <p className="font-extralight text-xl lg:text-2xl xl:text-3xl">
+                Front End Developer
+              </p>
             </div>
           </div>
         </div>
@@ -108,9 +113,9 @@ const Home = () => {
           <p className="gradient">Alec Blance © 2023</p>
           <Socials />
         </div>
-        <div className="flex absolute w-full h-full z-[-1] items-end bottom-[-50vw] md:bottom-[-70vh] justify-center ">
+        {/* <div className="flex absolute w-full h-full z-[-1] items-end bottom-[-50vw] md:bottom-[-70vh] justify-center ">
           <div className="h-[100vh] max-h-[100vw] w-[100vh] rounded-full bg-portfolio-accent light blur-[35vw] md:blur-[25vh]"></div>
-        </div>
+        </div> */}
       </div>
     </>
   );

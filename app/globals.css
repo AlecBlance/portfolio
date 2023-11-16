@@ -10,7 +10,7 @@
 
 @layer components {
   .gradient {
-    @apply bg-gradient-to-r from-portfolio-secondary to-portfolio-secondary/70 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-portfolio-accent to-indigo-400 bg-clip-text text-transparent;
   }
 }
 
