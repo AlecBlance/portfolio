@@ -18,8 +18,8 @@ const Home = () => {
   return (
     <>
       <div className="relative h-[100dvh] flex flex-col">
-        <div className="flex justify-center items-center absolute w-full h-full z-[-1]">
-          <div className="h-[100vw] w-[100vw] rounded-full justify-self-center bg-portfolio-accent light blur-[35vw]"></div>
+        <div className="flex justify-center items-center absolute w-full h-[100dvh] z-[-1]">
+          <div className="h-[100vh] max-h-[100vw] w-[100vh] rounded-full justify-self-center bg-portfolio-accent light blur-[35vw] sm:blur-[25vh]"></div>
         </div>
         <div className="flex justify-between bg-portfolio-glass bg-opacity-10 border-b border-b-portfolio-glass-stroke p-3">
           <div className="flex items-center py-1 px-4 bg-portfolio-accent rounded-md">
@@ -33,7 +33,7 @@ const Home = () => {
           <Socials />
         </div>
         <div className="h-full w-full flex items-center">
-          <div className="h-[45%] flex flex-col w-full items-center justify-evenly">
+          <div className="h-[45%] flex flex-col w-full items-center gap-y-10">
             <Image
               className="rounded-full"
               src="/profile.jpg"
@@ -41,9 +41,11 @@ const Home = () => {
               width={150}
               height={150}
             />
-            <p className="font-extralight text-xl">Hi, 👋🏻 I am </p>
-            <h1 className="text-5xl gradient">Alec Blance</h1>
-            <p className="font-extralight text-xl">Front End Developer</p>
+            <div className="flex flex-col gap-y-5 items-center">
+              <p className="font-extralight text-xl">Hi, 👋🏻 I am </p>
+              <h1 className="text-5xl gradient">Alec Blance</h1>
+              <p className="font-extralight text-xl">Front End Developer</p>
+            </div>
           </div>
         </div>
       </div>
