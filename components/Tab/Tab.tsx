@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ProjectsIcon, VisualsIcon } from "@/components/Icon";
 
 const Tab = () => {
@@ -9,18 +9,6 @@ const Tab = () => {
   const selectedStyle =
     "text-portfolio-secondary bg-portfolio-accent fill-portfolio-secondary";
   const unSelectedStyle = "text-portfolio-gray fill-portfolio-gray";
-  useEffect(() => {
-    const movingCircle = document.querySelector<HTMLElement>(".moving-circle");
-    document.addEventListener("mousemove", function (e) {
-      window.requestAnimationFrame(function () {
-        movingCircle!.style.transform = `translateX(${
-          e.clientX - 20
-        }px) translateY(${e.clientY + 20}px)`;
-      });
-    });
-  }, []);
-
-  // TODO: add moving circle
 
   const setTab = (tab: string) => {
     return () => {
