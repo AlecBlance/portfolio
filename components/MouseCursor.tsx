@@ -14,6 +14,6 @@ const MouseCursor = () => {
     });
   }, []);
 
-  return;
+  return null;
 };
 export default MouseCursor;
