@@ -1,9 +1,9 @@
-import { Project } from "@/utils/types";
+import { Project as ProjectType } from "@/utils/types";
 import { server } from "@/utils/config";
 
 const Projects = async () => {
   const response = await fetch(`${server}/api/projects`);
-  const projects: Project[] = await response.json();
+  const projects: ProjectType[] = await response.json();
 
   return (
     <div className="tab projects flex py-2 px-12 flex-col sm:px-[15vw]">
@@ -14,9 +14,15 @@ const Projects = async () => {
   );
 };
 
-const Project = ({ project }: { project: Project }) => {
+const Project = ({ project }: { project: ProjectType }) => {
   return (
-    <div className="flex flex-col w-full py-12 lg:first:pt-24 border-b border-portfolio-lightgray last:border-b-0 xl:flex-row">
+    <div
+      className="flex flex-col w-full py-12 lg:first:pt-24 border-b border-portfolio-lightgray last:border-b-0 xl:flex-row"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="800"
+      data-aos-delay="700"
+    >
       <div className="flex flex-col lg:flex-row lg:mb-8 xl:flex-col xl:mb-0">
         <div className="flex flex-col lg:pr-8 xl:pr-12">
           <div className="mb-6 lg:mb-12">
