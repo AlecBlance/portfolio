@@ -12,6 +12,7 @@ const Tab = () => {
   const unSelectedStyle = "text-portfolio-gray fill-portfolio-gray";
 
   const setTab = (tab: string) => {
+    AOS.refreshHard();
     return () => {
       const flexedTab = document.querySelector<HTMLElement>(".tab.flex")!;
       flexedTab.classList.remove("flex");
