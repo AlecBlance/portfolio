@@ -21,19 +21,19 @@ const posts = [
     liveSite: "https://podz-music.vercel.app/",
     sourceCode: "https://github.com/AlecBlance/Podz",
   },
-  {
-    id: 2,
-    emoji: "📦",
-    title: "Animove",
-    app: "Management System for Balayan Org",
-    image: "/Animove.png",
-    gif: "",
-    description:
-      "A graduate-requirement capstone project that aims to bootstrap necessary technologies for Balayan organization. A solution for a distributed project with no centralized system",
-    technologies: ["PHP", "Javascript", "MySQL", "JQuery", "REST API"],
-    liveSite: "https://animove.alecblance.com",
-    sourceCode: "",
-  },
+  // {
+  //   id: 2,
+  //   emoji: "📦",
+  //   title: "Animove",
+  //   app: "Management System for Balayan Org",
+  //   image: "/Animove.png",
+  //   gif: "",
+  //   description:
+  //     "A graduate-requirement capstone project that aims to bootstrap necessary technologies for Balayan organization. A solution for a distributed project with no centralized system",
+  //   technologies: ["PHP", "Javascript", "MySQL", "JQuery", "REST API"],
+  //   liveSite: "https://animove.alecblance.com",
+  //   sourceCode: "",
+  // },
   {
     id: 3,
     emoji: "📚",
