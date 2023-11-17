@@ -57,6 +57,7 @@ const Project = ({ project }: { project: Project }) => {
       </div>
       <div
         className="w-full h-[45vw] bg-cover bg-center rounded-lg xl:h-[25vw] xl:w-[39vw] shrink-0"
+        data-gif={project.gif}
         style={{
           backgroundImage: `url('${project.image}')`,
         }}

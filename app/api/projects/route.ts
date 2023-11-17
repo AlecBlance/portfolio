@@ -6,8 +6,8 @@ const posts = [
     emoji: "🎶",
     title: "Podz",
     app: "Music Player",
-    gif: "",
-    image: "/podz-laptop.png",
+    gif: "/podz.gif",
+    image: "/podz-laptop2.png",
     description:
       "A music player like Spotify but the audio source is from Youtube. This is a UI concept by Ruby Montalvo for her Daily UI challenge but I made it fully functional.",
     technologies: [
