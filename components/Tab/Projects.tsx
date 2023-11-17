@@ -40,7 +40,7 @@ const Project = ({ project }: { project: Project }) => {
           {project.liveSite && (
             <a
               href={project.liveSite}
-              className="mr-3 bg-portfolio-accent text-portfolio-secondary py-2 px-5 rounded-lg text-sm"
+              className="mr-3 border border-portfolio-accent bg-portfolio-accent text-portfolio-secondary py-2 px-5 rounded-lg text-sm"
             >
               Live site
             </a>
