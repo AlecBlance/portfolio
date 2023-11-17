@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ProjectsIcon, VisualsIcon } from "@/components/Icon";
+import AOS from "aos";
 
 const Tab = () => {
   const [currentTab, setCurrentTab] = useState<string>("projects");
@@ -26,7 +27,13 @@ const Tab = () => {
   };
 
   return (
-    <div className="px-12 mt-10 flex items-center sm:px-[15vw] lg:w-64 lg:px-0 mx-auto">
+    <div
+      className="px-12 mt-10 flex items-center sm:px-[15vw] lg:w-64 lg:px-0 mx-auto"
+      data-aos="zoom-out"
+      data-aos-easing="ease"
+      data-aos-duration="500"
+      data-aos-delay="100"
+    >
       <div className="flex bg-portfolio-black w-full rounded-lg border border-portfolio-lightgray">
         <button
           className={`w-1/2 flex items-center justify-center m-1 px-2 py-1 rounded-lg ${

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { GitIcon } from "./Icon";
+import AOS from "aos";
 
 const Effects = () => {
   const followMouse = () => {
@@ -38,6 +38,7 @@ const Effects = () => {
   useEffect(() => {
     followMouse();
     hoverGif();
+    AOS.init();
   }, []);
 
   return null;
