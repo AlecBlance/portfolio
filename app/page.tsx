@@ -59,10 +59,16 @@ const Home = () => {
         <Projects />
         <Visuals />
       </div>
-      <div className="py-6 px-12 bg-portfolio-black bg-opacity-40 sm:px-[15vw] border-y border-portfolio-glass-stroke/40">
-        <h1 className="text-xl font-bold gradient mb-3">Skills</h1>
-        <p>I am comfortable working with these technologies.</p>
-        <div className="mt-6 flex flex-wrap w-full justify-around gap-x-5 gap-y-5">
+      <div className="py-6 px-12 mt-12 md:py-12 bg-portfolio-black bg-opacity-40 sm:px-[15vw] border-y border-portfolio-glass-stroke/40">
+        <h1 className="mb-3">
+          <span className="font-bold gradient text-2xl lg:text-3xl">
+            Skills
+          </span>
+        </h1>
+        <p className="lg:text-xl">
+          I am comfortable working with these technologies.
+        </p>
+        <div className="mt-6 md:mt-12 w-full grid skills-grid gap-4 lg:text-lg">
           <div className="flex items-center first:ml-0">
             <ReactIcon className="mr-2 h-8 w-8" />
             <p>React</p>
@@ -97,9 +103,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="min-h-[70vh] h-[50vw] flex flex-col relative overflow-hidden">
+      <div className="min-h-[70vh] h-[40vw] flex flex-col relative overflow-hidden">
         <div className="flex-grow mx-12 flex flex-col items-center justify-center">
-          <h1 className="gradient text-5xl text-center leading-tight	">
+          <h1 className="gradient text-5xl text-center leading-tight lg:text-6xl lg:leading-normal xl:text-7xl xl:leading-relaxed">
             Let’s build something epic!
           </h1>
           <a
