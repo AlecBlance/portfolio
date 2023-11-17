@@ -29,7 +29,7 @@ const Tab = () => {
   return (
     <div
       className="px-12 mt-10 flex items-center sm:px-[15vw] lg:w-64 lg:px-0 mx-auto"
-      data-aos="zoom-out"
+      data-aos="fade-zoom-in"
       data-aos-easing="ease"
       data-aos-duration="500"
       data-aos-delay="100"
