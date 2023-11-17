@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import Effects from "@/components/Effects";
 
 const inter = Outfit({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
         className={`bg-portfolio-primary bg-dots bg-center bg-no-repeat bg-fixed text-portfolio-secondary xl:bg-cover ${inter.className}`}
       >
         {children}
+        <Effects />
       </body>
     </html>
   );
