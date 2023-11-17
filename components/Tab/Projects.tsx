@@ -16,7 +16,7 @@ const Projects = async () => {
 
 const Project = ({ project }: { project: Project }) => {
   return (
-    <div className="flex flex-col w-full py-12 first:pt-24 border-b border-portfolio-lightgray last:border-b-0 xl:flex-row">
+    <div className="flex flex-col w-full py-12 lg:first:pt-24 border-b border-portfolio-lightgray last:border-b-0 xl:flex-row">
       <div className="flex flex-col lg:flex-row lg:mb-8 xl:flex-col xl:mb-0">
         <div className="flex flex-col lg:pr-8 xl:pr-12">
           <div className="mb-6 lg:mb-12">
