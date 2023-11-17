@@ -10,9 +10,3 @@ export interface Project {
   liveSite: string;
   sourceCode: string;
 }
-
-export interface Visual {
-  id: number;
-  image: string;
-  isPortrait: boolean;
-}

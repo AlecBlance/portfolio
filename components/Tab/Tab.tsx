@@ -14,9 +14,12 @@ const Tab = () => {
     return () => {
       const flexedTab = document.querySelector<HTMLElement>(".tab.flex")!;
       flexedTab.classList.remove("flex");
+      flexedTab.classList.remove("lg:grid");
       flexedTab.classList.add("hidden");
       const selectedTab = document.querySelector<HTMLElement>(`.tab.${tab}`)!;
-      selectedTab.classList.add("flex");
+      tab === "visuals"
+        ? selectedTab.classList.add("flex", "lg:grid")
+        : selectedTab.classList.add("flex");
       selectedTab.classList.remove("hidden");
       setCurrentTab(tab);
     };
