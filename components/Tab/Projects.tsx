@@ -20,8 +20,8 @@ const Project = ({ project }: { project: ProjectType }) => {
       className="flex flex-col w-full py-12 lg:first:pt-24 border-b border-portfolio-lightgray last:border-b-0 xl:flex-row"
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-out"
-      data-aos-duration="800"
-      data-aos-delay="700"
+      data-aos-duration="700"
+      data-aos-delay="500"
     >
       <div className="flex flex-col lg:flex-row lg:mb-8 xl:flex-col xl:mb-0">
         <div className="flex flex-col lg:pr-8 xl:pr-12">
@@ -46,7 +46,7 @@ const Project = ({ project }: { project: ProjectType }) => {
           {project.liveSite && (
             <a
               href={project.liveSite}
-              className="mr-3 border border-portfolio-accent bg-portfolio-accent text-portfolio-secondary py-2 px-5 rounded-lg text-sm"
+              className="mr-3 border border-portfolio-accent bg-portfolio-accent text-portfolio-secondary py-2 px-5 rounded-lg text-sm hover:animate-pulse"
             >
               Live site
             </a>
@@ -54,7 +54,7 @@ const Project = ({ project }: { project: ProjectType }) => {
           {project.sourceCode && (
             <a
               href={project.sourceCode}
-              className="text-sm border border-portfolio-secondary py-2 px-5 rounded-lg"
+              className="text-sm border border-portfolio-secondary py-2 px-5 rounded-lg hover:animate-pulse"
             >
               Source code
             </a>
