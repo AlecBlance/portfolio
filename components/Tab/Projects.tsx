@@ -58,7 +58,7 @@ const Project = ({ project }: { project: Project }) => {
       <div
         className="w-full h-[45vw] bg-cover bg-center rounded-lg xl:h-[25vw] xl:w-[39vw] shrink-0"
         style={{
-          backgroundImage: `url('/${project.title.replaceAll(" ", "")}.png')`,
+          backgroundImage: `url('${project.image}')`,
         }}
       ></div>
     </div>
