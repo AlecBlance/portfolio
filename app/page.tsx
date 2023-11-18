@@ -24,13 +24,13 @@ const Home = () => {
         </div> */}
 
         <div
-          className="flex justify-between sm:mx-[15vw] mt-6 px-12 sm:px-0"
+          className="flex justify-between sm:mx-[15vw] mt-6 px-12 sm:px-0 max-xs:px-[5vw]"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-out"
           data-aos-duration="800"
           data-aos-delay="1000"
         >
-          <div className="flex items-center py-1 px-4 rounded-md border border-portfolio-accent hover:bg-portfolio-accent font-light ease-in-out transition-all">
+          <div className="flex items-center py-1 px-4 rounded-md border border-portfolio-accent hover:bg-portfolio-accent font-light ease-in-out transition-all max-xs:text-xs max-xs:py-2">
             <a href="https://drive.google.com/file/d/182cqMIL5egzjUxaYCUp5-RQaMRXGsUjQ/view?usp=sharing">
               My Resume
             </a>
@@ -95,12 +95,12 @@ const Home = () => {
           data-aos-duration="500"
           data-aos-delay="100"
         >
-          <span className="font-bold gradient text-2xl lg:text-3xl">
+          <span className="font-bold max-xs:text-lg gradient text-2xl lg:text-3xl">
             Skills
           </span>
         </h1>
         <p
-          className="lg:text-xl"
+          className="lg:text-xl max-xs:text-sm"
           data-aos="fade-zoom-in"
           data-aos-easing="ease"
           data-aos-duration="500"
@@ -108,7 +108,7 @@ const Home = () => {
         >
           I am comfortable working with these technologies.
         </p>
-        <div className="mt-6 md:mt-12 w-full grid skills-grid gap-4 lg:text-lg">
+        <div className="mt-6 md:mt-12 w-full grid skills-grid gap-4 lg:text-lg max-xs:gap-2">
           <div
             className="flex items-center first:ml-0"
             data-aos="fade-zoom-in"
@@ -116,8 +116,8 @@ const Home = () => {
             data-aos-duration="500"
             data-aos-delay="500"
           >
-            <ReactIcon className="mr-2 h-8 w-8" />
-            <p>React</p>
+            <ReactIcon className="mr-2 h-8 w-8 max-xs:w-5" />
+            <p className="max-xs:text-sm">React</p>
           </div>
           <div
             className="flex items-center first:ml-0"
@@ -126,8 +126,8 @@ const Home = () => {
             data-aos-duration="500"
             data-aos-delay="700"
           >
-            <TypescriptIcon className="mr-2 h-8 w-8" />
-            <p>Typescript</p>
+            <TypescriptIcon className="mr-2 h-8 w-8 max-xs:w-5" />
+            <p className="max-xs:text-sm">Typescript</p>
           </div>
           <div
             className="flex items-center  first:ml-0"
@@ -136,8 +136,8 @@ const Home = () => {
             data-aos-duration="500"
             data-aos-delay="900"
           >
-            <TailwindIcon className="mr-2 h-8 w-8" />
-            <p>Tailwind</p>
+            <TailwindIcon className="mr-2 h-8 w-8 max-xs:w-5" />
+            <p className="max-xs:text-sm">Tailwind</p>
           </div>
           <div
             className="flex items-center  first:ml-0"
@@ -146,8 +146,8 @@ const Home = () => {
             data-aos-duration="500"
             data-aos-delay="1100"
           >
-            <NodeIcon className="mr-2 h-8 w-8" />
-            <p>Node</p>
+            <NodeIcon className="mr-2 h-8 w-8 max-xs:w-5" />
+            <p className="max-xs:text-sm">Node</p>
           </div>
           <div
             className="flex items-center  first:ml-0"
@@ -156,8 +156,8 @@ const Home = () => {
             data-aos-duration="500"
             data-aos-delay="1300"
           >
-            <ExpressIcon className="mr-2 h-8 w-8" />
-            <p>Express</p>
+            <ExpressIcon className="mr-2 h-8 w-8 max-xs:w-5" />
+            <p className="max-xs:text-sm">Express</p>
           </div>
           <div
             className="flex items-center  first:ml-0"
@@ -166,8 +166,8 @@ const Home = () => {
             data-aos-duration="500"
             data-aos-delay="1500"
           >
-            <MongoIcon className="mr-2 h-8 w-8" />
-            <p>MongoDB</p>
+            <MongoIcon className="mr-2 h-8 w-8 max-xs:w-5" />
+            <p className="max-xs:text-sm">MongoDB</p>
           </div>
           <div
             className="flex items-center  first:ml-0"
@@ -176,8 +176,8 @@ const Home = () => {
             data-aos-duration="500"
             data-aos-delay="1700"
           >
-            <FigmaIcon className="mr-2 h-8 w-8" />
-            <p>Figma</p>
+            <FigmaIcon className="mr-2 h-8 w-8 max-xs:w-5" />
+            <p className="max-xs:text-sm">Figma</p>
           </div>
           <div
             className="flex items-center  first:ml-0"
@@ -186,12 +186,12 @@ const Home = () => {
             data-aos-duration="500"
             data-aos-delay="1900"
           >
-            <GitIcon className="mr-2 h-8 w-8" />
-            <p>Git</p>
+            <GitIcon className="mr-2 h-8 w-8 max-xs:w-5" />
+            <p className="max-xs:text-sm">Git</p>
           </div>
         </div>
       </div>
-      <div className="min-h-[70vh] h-[40vw] flex flex-col relative overflow-hidden">
+      <div className="min-h-[70vh] max-xs:min-h-[90vh] h-[40vw] flex flex-col relative overflow-hidden">
         <div className="flex-grow mx-12 flex flex-col items-center justify-center">
           <h1
             className="gradient text-5xl text-center leading-tight lg:text-6xl lg:leading-normal xl:text-7xl xl:leading-relaxed"
@@ -204,7 +204,7 @@ const Home = () => {
           </h1>
           <a
             href="mailto:blancealec1@gmail.com"
-            className="bg-portfolio-glass/30 mt-12 border border-portfolio-secondary border-opacity-20 px-12 py-5 text-2xl rounded-lg"
+            className="bg-portfolio-glass/30 mt-12 max-xs:text-lg border border-portfolio-secondary border-opacity-20 px-12 py-5 text-2xl rounded-lg"
             data-aos="fade-up"
             data-aos-easing="ease"
             data-aos-duration="800"
@@ -214,7 +214,7 @@ const Home = () => {
           </a>
         </div>
         <div className="flex justify-between bg-portfolio-glass bg-opacity-10 border-b border-b-portfolio-glass-stroke p-3 sm:px-[15vw]">
-          <p className="gradient">Alec Blance © 2023</p>
+          <p className="gradient max-xs:text-xs">Alec Blance © 2023</p>
           <div className="relative">
             <div className="animate-bounce absolute bg-portfolio-accent top-[-3.5rem] px-2 py-1 left-[-9rem] rounded-lg rounded-br-none">
               <p className="text-xs">More projects on my Github!</p>

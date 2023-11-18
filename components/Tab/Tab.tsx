@@ -32,7 +32,7 @@ const Tab = () => {
 
   return (
     <div
-      className="px-12 mt-10 flex items-center sm:px-[15vw] lg:w-64 lg:px-0 mx-auto"
+      className="px-12 mt-10 flex items-center sm:px-[15vw] lg:w-64 lg:px-0 mx-auto max-xs:px-[5vw]"
       data-aos="fade-zoom-in"
       data-aos-easing="ease"
       data-aos-duration="500"
@@ -40,21 +40,21 @@ const Tab = () => {
     >
       <div className="flex bg-portfolio-black w-full rounded-lg border border-portfolio-lightgray">
         <button
-          className={`w-1/2 flex items-center justify-center m-1 px-2 py-1 rounded-lg ${
+          className={`w-1/2 max-xs:text-sm flex items-center justify-center m-1 px-2 py-1 rounded-lg ${
             currentTab === "projects" ? selectedStyle : unSelectedStyle
           }`}
           onClick={setTab("projects")}
         >
-          <ProjectsIcon className="pr-2 shrink-0 w-7 h-7" />
+          <ProjectsIcon className="pr-2 shrink-0 w-7 h-7 max-xs:w-5 max-xs:h-5" />
           Projects
         </button>
         <button
-          className={`w-1/2 flex items-center justify-center m-1 px-2 py-1 rounded-lg ${
+          className={`w-1/2 max-xs:text-sm flex items-center justify-center m-1 px-2 py-1 rounded-lg ${
             currentTab === "visuals" ? selectedStyle : unSelectedStyle
           }`}
           onClick={setTab("visuals")}
         >
-          <VisualsIcon className="w-7 h-7 shrink-0 pr-2" />
+          <VisualsIcon className="w-7 h-7 shrink-0 pr-2 max-xs:w-5 max-xs:h-5" />
           Visuals
         </button>
       </div>

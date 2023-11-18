@@ -73,7 +73,7 @@ const Projects = async () => {
   ];
 
   return (
-    <div className="tab projects flex py-2 px-12 flex-col sm:px-[15vw]">
+    <div className="tab projects flex py-2 px-12 flex-col sm:px-[15vw] max-xs:px-[5vw]">
       {projects.map((project) => (
         <Project key={project.id} project={project} />
       ))}
@@ -84,7 +84,7 @@ const Projects = async () => {
 const Project = ({ project }: { project: ProjectType }) => {
   return (
     <div
-      className="flex flex-col w-full py-12 lg:first:pt-24 border-b border-portfolio-lightgray last:border-b-0 xl:flex-row"
+      className="flex flex-col w-full py-12 lg:first:pt-24 border-b border-portfolio-lightgray last:border-b-0 xl:flex-row max-xs:py-6"
       data-aos="fade-zoom-in"
       data-aos-easing="ease-in-out"
       data-aos-duration="700"
@@ -95,16 +95,16 @@ const Project = ({ project }: { project: ProjectType }) => {
           <div className="mb-6 lg:mb-12">
             <h1 className="mb-3 text-2xl lg:text-3xl">
               {project.emoji}{" "}
-              <span className="font-bold gradient text-2xl lg:text-3xl">
+              <span className="font-bold gradient text-2xl lg:text-3xl max-xs:text-lg">
                 {project.title}
               </span>
             </h1>
-            <p className="lg:text-xl">{project.app}</p>
+            <p className="lg:text-xl max-xs:text-sm">{project.app}</p>
           </div>
-          <p className="text-portfolio-gray lg:text-lg font-light">
+          <p className="text-portfolio-gray lg:text-lg font-light max-xs:text-xs">
             {project.description}
           </p>
-          <p className="text-portfolio-gray text-sm lg:text-base mt-4 font-light">
+          <p className="text-portfolio-gray text-sm lg:text-base mt-4 font-light max-xs:text-xs">
             <b>Technologies: </b>
             {project.technologies.join("; ")}
           </p>
@@ -113,7 +113,7 @@ const Project = ({ project }: { project: ProjectType }) => {
           {project.liveSite && (
             <a
               href={project.liveSite}
-              className="mr-3 border border-portfolio-accent bg-portfolio-accent text-portfolio-secondary py-2 px-5 rounded-lg text-sm hover:animate-pulse"
+              className="mr-3 max-xs:text-xs border border-portfolio-accent bg-portfolio-accent text-portfolio-secondary py-2 px-5 rounded-lg text-sm hover:animate-pulse"
             >
               Live site
             </a>
@@ -121,7 +121,7 @@ const Project = ({ project }: { project: ProjectType }) => {
           {project.sourceCode && (
             <a
               href={project.sourceCode}
-              className="text-sm border border-portfolio-secondary py-2 px-5 rounded-lg hover:animate-pulse"
+              className="text-sm max-xs:text-xs border border-portfolio-secondary py-2 px-5 rounded-lg hover:animate-pulse"
             >
               Source code
             </a>

@@ -1,6 +1,6 @@
 const Visuals = async () => {
   return (
-    <div className="tab visuals hidden mt-8 py-12 lg:first:pt-24 px-12 flex-col gap-y-12 mb-12 sm:px-[15vw] grid-cols-3 grid-rows-4 lg:gap-y-5 lg:gap-x-5 xl:gap-y-10 xl:gap-x-10">
+    <div className="tab visuals hidden mt-8 py-12 lg:first:pt-24 px-12 flex-col gap-y-12 mb-12 sm:px-[15vw] grid-cols-3 grid-rows-4 lg:gap-y-5 lg:gap-x-5 xl:gap-y-10 xl:gap-x-10 max-xs:px-[5vw] max-xs:py-6 max-xs:gap-y-6">
       {/* {visuals.map((visual) => (
         <div
           key={visual.id}
