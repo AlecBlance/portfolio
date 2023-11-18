@@ -27,7 +27,7 @@ const Tab = () => {
   };
 
   useEffect(() => {
-    if (currentTab === "visuals") AOS.refresh();
+    AOS.refresh();
   }, [currentTab]);
 
   return (
