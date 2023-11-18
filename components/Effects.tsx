@@ -27,7 +27,6 @@ const Effects = () => {
           "data-gif"
         )!}')`;
       };
-      console.log(backupImage);
 
       image.onmouseout = function () {
         image.style.backgroundImage = backupImage;
