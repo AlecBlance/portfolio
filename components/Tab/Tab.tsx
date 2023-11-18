@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ProjectsIcon, VisualsIcon } from "@/components/Icon";
 import AOS from "aos";
 
@@ -12,7 +12,6 @@ const Tab = () => {
   const unSelectedStyle = "text-portfolio-gray fill-portfolio-gray";
 
   const setTab = (tab: string) => {
-    AOS.refreshHard();
     return () => {
       const flexedTab = document.querySelector<HTMLElement>(".tab.flex")!;
       flexedTab.classList.remove("flex");
@@ -26,6 +25,10 @@ const Tab = () => {
       setCurrentTab(tab);
     };
   };
+
+  useEffect(() => {
+    if (currentTab === "visuals") AOS.refresh();
+  }, [currentTab]);
 
   return (
     <div
