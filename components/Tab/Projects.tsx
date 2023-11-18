@@ -1,4 +1,15 @@
-import { Project as ProjectType } from "@/utils/types";
+interface ProjectType {
+  id: number;
+  emoji: string;
+  title: string;
+  app: string;
+  gif: string;
+  image: string;
+  description: string;
+  technologies: string[];
+  liveSite: string;
+  sourceCode: string;
+}
 
 const Projects = async () => {
   const projects: ProjectType[] = [
