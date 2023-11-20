@@ -114,7 +114,7 @@ const Home = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease"
             data-aos-duration="500"
-            data-aos-delay="500"
+            data-aos-delay="400"
           >
             <ReactIcon className="mr-2 h-8 w-8 max-xs:w-5" />
             <p className="max-xs:text-sm">React</p>
@@ -124,7 +124,7 @@ const Home = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease"
             data-aos-duration="500"
-            data-aos-delay="700"
+            data-aos-delay="500"
           >
             <TypescriptIcon className="mr-2 h-8 w-8 max-xs:w-5" />
             <p className="max-xs:text-sm">Typescript</p>
@@ -134,7 +134,7 @@ const Home = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease"
             data-aos-duration="500"
-            data-aos-delay="900"
+            data-aos-delay="600"
           >
             <TailwindIcon className="mr-2 h-8 w-8 max-xs:w-5" />
             <p className="max-xs:text-sm">Tailwind</p>
@@ -144,7 +144,7 @@ const Home = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease"
             data-aos-duration="500"
-            data-aos-delay="1100"
+            data-aos-delay="700"
           >
             <NodeIcon className="mr-2 h-8 w-8 max-xs:w-5" />
             <p className="max-xs:text-sm">Node</p>
@@ -154,7 +154,7 @@ const Home = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease"
             data-aos-duration="500"
-            data-aos-delay="1300"
+            data-aos-delay="800"
           >
             <ExpressIcon className="mr-2 h-8 w-8 max-xs:w-5" />
             <p className="max-xs:text-sm">Express</p>
@@ -164,7 +164,7 @@ const Home = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease"
             data-aos-duration="500"
-            data-aos-delay="1500"
+            data-aos-delay="900"
           >
             <MongoIcon className="mr-2 h-8 w-8 max-xs:w-5" />
             <p className="max-xs:text-sm">MongoDB</p>
@@ -174,7 +174,7 @@ const Home = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease"
             data-aos-duration="500"
-            data-aos-delay="1700"
+            data-aos-delay="1000"
           >
             <FigmaIcon className="mr-2 h-8 w-8 max-xs:w-5" />
             <p className="max-xs:text-sm">Figma</p>
@@ -184,7 +184,7 @@ const Home = () => {
             data-aos="fade-zoom-in"
             data-aos-easing="ease"
             data-aos-duration="500"
-            data-aos-delay="1900"
+            data-aos-delay="1100"
           >
             <GitIcon className="mr-2 h-8 w-8 max-xs:w-5" />
             <p className="max-xs:text-sm">Git</p>
