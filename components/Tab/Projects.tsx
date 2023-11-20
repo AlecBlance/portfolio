@@ -30,7 +30,7 @@ const Projects = async () => {
         "Node.js",
         "REST API",
       ],
-      liveSite: "https://podz-music.vercel.app/",
+      liveSite: "https://podz.alecblance.com/",
       sourceCode: "https://github.com/AlecBlance/Podz",
     },
     {
