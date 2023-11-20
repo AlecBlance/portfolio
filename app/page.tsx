@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <div className="relative min-h-[100dvh] flex flex-col">
-        <div className="pointer-events-none fixed left-0 top-[-2.5rem] z-[99] h-10 w-10 rounded-full bg-indigo-400 mix-blend-screen duration-75 ease-in-out moving-circle "></div>
+        <div className="pointer-events-none fixed left-0 top-[-2.5rem] z-[99] h-10 w-10 rounded-full bg-indigo-400 mix-blend-screen duration-75 ease-in-out moving-circle max-lg:hidden"></div>
         {/* <div className="flex justify-center items-center absolute w-full h-full z-[-1]">
           <div className="h-[100vh] max-h-[100vw] w-[100vh] rounded-full justify-self-center bg-portfolio-accent light blur-[35vw] md:blur-[25vh]"></div>
         </div> */}
